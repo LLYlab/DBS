@@ -1,0 +1,48 @@
+{
+  "name": "dsh-bgm-service",
+  "version": "0.1.0",
+  "description": "DBS (DSH BGM service) — 独立于 DET 的 DeepSeek Harness 音乐播放器插件：本地音乐库 + 浮动播放器 + AI 依据任务控制播放(模型工具 + 自动联动) + 网络下载入库 + 乐评爬取(尽力而为)。A standalone DeepSeek Harness BGM player plugin: local music library, floating player, AI-driven playback via model tools & auto-linkage, network download, and best-effort review scraping.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-tools": "^0.1.1-rc.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LLYlab/DBS.git"
+  },
+  "homepage": "https://github.com/LLYlab/DBS#readme",
+  "bugs": {
+    "url": "https://github.com/LLYlab/DBS/issues"
+  },
+  "author": "LLY <L2959159224@Outlook.com>",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "bgm",
+    "music",
+    "player",
+    "audio"
+  ]
+}

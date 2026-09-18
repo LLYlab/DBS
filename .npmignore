@@ -1,0 +1,23 @@
+# Keep the npm tarball minimal; `files` in package.json is the primary whitelist.
+# This file only guards against accidental additions during local development.
+
+node_modules/
+.npm-cache/
+*.bak-*
+*.log
+.git/
+.gitignore
+.vs/
+*.tsbuildinfo
+
+# local music / uploads must never be published
+music/
+uploads/
+*.mp3
+*.flac
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.webm
